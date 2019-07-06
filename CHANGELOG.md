@@ -1,0 +1,22 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+Some info about this you can get from [latest version 1.0.0](https://keepachangelog.com/ru/1.0.0/)
+And some info you can get from [older version 0.3.0](https://keepachangelog.com/ru/0.3.0/)
+
+## [Unreleased]
+### Added
+
+## [0.0.1] - 2019-07-06
+### Added
+- Initial commit
+- Get source code
+  - <https://github.com/express42/search_engine_crawler/archive/master.zip>
+  - <https://github.com/express42/search_engine_ui/archive/master.zip>
+
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
+[0.0.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.0.2
+[0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
