@@ -1,5 +1,21 @@
 # Финальный проект по курсу Otus DevOps
 
+## How to start
+
+Для запуска приложения необходимо использовать docker.
+Можно использовать запуск docker-machine из каталога docker-lab.
+
+``` text
+cd src
+cp -n .env.example .env
+docker-compose build
+docker-compose up -d
+```
+
+После запуска контейнеров подключаемся на 8000 порт
+* <http://localhost:8000> для локального хоста
+* <http://ip-docker-machine:8000> для удалённого хоста
+
 ## Основа для приложения
 
 Используется готовое приложение, которое включает:
