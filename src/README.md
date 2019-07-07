@@ -13,6 +13,32 @@ docker-compose up -d
 
 После этого проверить работу UI на 8000 порту по адресу docker хоста.
 
+## Очищение хвостов
+
+Для crawler специально сделано именованный persistent volume,
+если необходимо при тестировании очистить содержимое базы, то
+можно удалить конкретный volume.
+Дополнительно можно очистить вообще всё лишнее (используйте
+с осторожностью, т.к. придётся скачивать базовые образа заново
+и пересобирать контейнеры)
+
+``` text
+docker-compose down
+
+docker image ls
+docker image rm search_db
+
+docker image ls
+docker-compose down --rmi local
+docker-compose down --rmi all
+docker image rm $(docker image ls -q)
+
+docker-compose down -v
+docker volume rm $(docker volume ls -q)
+
+docker-compose down --remove-orphans
+```
+
 ## Примечание по GCP
 
 Для открытия доступа к UI необходимо добавить правило фаервола
