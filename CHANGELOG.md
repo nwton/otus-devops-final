@@ -11,6 +11,7 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ### Added
 
 ### Changed
+- Fixup links in changelog (from template to my own)
 
 ## [0.1.3] - 2019-07-07
 ### Added
@@ -23,7 +24,6 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ### Changed
 - Move ENV vars from build docker images to compose
 - Change name of mongodb container
-- Fixup links in changelog (from tamplate to my own)
 
 ## [0.1.2] - 2019-07-07
 ### Added
@@ -42,7 +42,8 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
   - <https://github.com/express42/search_engine_crawler/archive/master.zip>
   - <https://github.com/express42/search_engine_ui/archive/master.zip>
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
-[0.1.3]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.2...v0.1.3
-[0.1.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.1.2
-[0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
+[Unreleased]: https://github.com/nwton/otus-devops-final/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/nwton/otus-devops-final/compare/v0.1.3...v0.1.4
+[0.1.3]: https://github.com/nwton/otus-devops-final/compare/v0.1.2...v0.1.3
+[0.1.2]: https://github.com/nwton/otus-devops-final/compare/v0.0.1...v0.1.2
+[0.0.1]: https://github.com/nwton/otus-devops-final/releases/tag/v0.0.1
