@@ -11,6 +11,12 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ### Added
 
 ### Changed
+
+## [0.1.4] - 2019-07-08
+### Added
+- Add packer template to build image in GCP with docker-ce
+
+### Changed
 - Fixup links in changelog (from template to my own)
 
 ## [0.1.3] - 2019-07-07
