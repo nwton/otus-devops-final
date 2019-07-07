@@ -9,9 +9,15 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 
 ## [Unreleased]
 ### Added
+- Add depends_on to mongodb and rabbitmq for crawler
+  (if crawler run firstly, it fault)
+- Add ENV for rabbitmq username and password
+  (safety don't use default guest/guest)
+- Parametrize in ENV for crawler URL and EXCLUDE_URL
 
 ### Changed
 - Move ENV vars from build docker images to compose
+- Change name of mongodb container
 
 ## [0.1.2] - 2019-07-07
 ### Added
