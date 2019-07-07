@@ -11,7 +11,7 @@
 Краткий вариант, если значения по-умолчанию устраивают:
 ``` text
 packer build \
-    -var-file=variables.json.example \
+    -var-file=packer/variables.json.example \
     -var 'my_project_id=final-00000' \
     packer/base_docker.json
 ```
@@ -23,7 +23,7 @@ packer build \
 cp -n packer/variables.json.examples packer/variables.json
 vi packer/variables.json
 packer build \
-    -var-file=variables.json \
+    -var-file=packer/variables.json \
     packer/base_docker.json
 ```
 
@@ -47,7 +47,8 @@ sudo install /tmp/packer /usr/local/bin/packer
 Используем роль [geerlingguy.docker](https://galaxy.ansible.com/geerlingguy/docker)
 из Ansible Galaxy.
 
-Для добавления
+Для добавления используем файл зависимостей
+(или добавляем вручную).
 
 ``` text
 cd ansible
