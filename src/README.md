@@ -1,5 +1,33 @@
 # Исходный код компонентов
 
+## Сборка и запуск
+
+Необходимо заполнить `.env` по аналогии с `.env.example`
+и запустить через docker-compose
+
+``` text
+cp -n .env.example .env
+docker-compose build
+docker-compose up -d
+```
+
+После этого проверить работу UI на 8000 порту по адресу docker хоста.
+
+## Примечание по GCP
+
+Для открытия доступа к UI необходимо добавить правило фаервола
+по 8000 порту, например, для docker-lab сделать так:
+
+``` text
+gcloud compute firewall-rules create \
+    --allow tcp:8000 \
+    --target-tags=docker-machine \
+    --description="docker-lab allow access to search_ui port 8000" \
+    --direction=INGRESS \
+    web-access-docker-lab-search-ui
+```
+
+##
 Исходный код приложения:
 
 * <https://github.com/express42/search_engine_crawler>
@@ -34,15 +62,3 @@ wget https://github.com/express42/search_engine_ui/archive/master.zip \
   * <https://pika.readthedocs.io/en/0.13.1/>
   * <https://www.rabbitmq.com/versions.html>
   * <https://hub.docker.com/_/rabbitmq/>
-
-Для открытия доступа к UI необходимо добавить правило фаервола
-по 8000 порту, например, для docker-lab сделать так:
-
-``` text
-gcloud compute firewall-rules create \
-    --allow tcp:8000 \
-    --target-tags=docker-machine \
-    --description="docker-lab allow access to search_ui port 8000" \
-    --direction=INGRESS \
-    web-access-docker-lab-search-ui
-```

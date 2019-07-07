@@ -10,6 +10,16 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ## [Unreleased]
 ### Added
 
+## [0.1.2] - 2019-07-07
+### Added
+- Add docker-lab module (GCP and local)
+- Readme for sources
+- Setup application in docker container
+- Add docker-compose playbook
+
+### Changed
+- Move source code of crawler and ui to folder src
+
 ## [0.0.1] - 2019-07-06
 ### Added
 - Initial commit
@@ -18,5 +28,5 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
   - <https://github.com/express42/search_engine_ui/archive/master.zip>
 
 [Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
-[0.0.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.0.2
+[0.1.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.1.2
 [0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
