@@ -1,6 +1,10 @@
 # Default use:
 # core.excludesfile=~/work/gitignore_global
 
+# For private files
+packer/variables.json
+src/.env
+
 # For terraform temp files
 *.tfstate
 *.tfstate.*.backup
