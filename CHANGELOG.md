@@ -9,6 +9,11 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+## [0.1.3] - 2019-07-07
+### Added
 - Add depends_on to mongodb and rabbitmq for crawler
   (if crawler run firstly, it fault)
 - Add ENV for rabbitmq username and password
@@ -18,6 +23,7 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ### Changed
 - Move ENV vars from build docker images to compose
 - Change name of mongodb container
+- Fixup links in changelog (from tamplate to my own)
 
 ## [0.1.2] - 2019-07-07
 ### Added
@@ -37,5 +43,6 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
   - <https://github.com/express42/search_engine_ui/archive/master.zip>
 
 [Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.0.0...HEAD
+[0.1.3]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.1...v0.1.2
 [0.0.1]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.0.1
