@@ -26,6 +26,9 @@ services:
   crawler:
     build: ./search_engine_crawler
     image: ${USERNAME}/se_crawler:${UI_VERSION}
+    depends_on:
+      - rabbitmq
+      - mongo_db
     environment:
       MONGO: se_mongo_crawler_db
       MONGO_PORT: 27017
