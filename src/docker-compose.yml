@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  mongo_db:
+  mongodb:
     image: mongo:3.4
     volumes:
       - vol_mongo_db:/data/db
@@ -28,7 +28,7 @@ services:
     image: ${USERNAME}/se_crawler:${UI_VERSION}
     depends_on:
       - rabbitmq
-      - mongo_db
+      - mongodb
     environment:
       MONGO: se_mongo_crawler_db
       MONGO_PORT: 27017
