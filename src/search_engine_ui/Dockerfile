@@ -12,9 +12,6 @@ RUN apk add --no-cache build-base python3 python3-dev  \
     && rm -rf /var/cache/* \
     && rm -rf /root/.cache/*
 
-ENV MONGO se_mongo_ui_db
-ENV MONGO_PORT 27017
-
 ENV FLASK_APP ui.py
 
 WORKDIR /app/ui

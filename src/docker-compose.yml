@@ -26,12 +26,25 @@ services:
   crawler:
     build: ./search_engine_crawler
     image: ${USERNAME}/se_crawler:${UI_VERSION}
+    environment:
+      MONGO: se_mongo_crawler_db
+      MONGO_PORT: 27017
+      RMQ_HOST: se_rabbit
+      RMQ_QUEUE: crawler
+      RMQ_USERNAME: guest
+      RMQ_PASSWORD: guest
+      CHECK_INTERVAL: 1
+      EXCLUDE_URLS: ".*github.com"
+      URL: "https://vitkhab.github.io/search_engine_test_site/"
     networks:
       - net_search
 
   ui:
     build: ./search_engine_ui
     image: ${USERNAME}/se_ui:${UI_VERSION}
+    environment:
+      MONGO: se_mongo_ui_db
+      MONGO_PORT: 27017
     ports:
       - ${UI_PORT}:${UI_PORT}/tcp
     networks:

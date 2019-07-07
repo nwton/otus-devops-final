@@ -10,6 +10,9 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 ## [Unreleased]
 ### Added
 
+### Changed
+- Move ENV vars from build docker images to compose
+
 ## [0.1.2] - 2019-07-07
 ### Added
 - Add docker-lab module (GCP and local)
