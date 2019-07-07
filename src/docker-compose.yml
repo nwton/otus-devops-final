@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  mongo_db:
+    image: mongo:3.4
+    volumes:
+      - vol_mongo_db:/data/db
+    networks:
+      net_search:
+        aliases:
+          - se_mongo_ui_db
+          - se_mongo_crawler_db
+    ports:
+      - "27017:27017"
+
+  rabbitmq:
+    image: rabbitmq:3.7
+    networks:
+      net_search:
+        aliases:
+          - se_rabbit
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  crawler:
+    build: ./search_engine_crawler
+    image: ${USERNAME}/se_crawler:${UI_VERSION}
+    networks:
+      - net_search
+
+  ui:
+    build: ./search_engine_ui
+    image: ${USERNAME}/se_ui:${UI_VERSION}
+    ports:
+      - ${UI_PORT}:${UI_PORT}/tcp
+    networks:
+      - net_search
+
+volumes:
+  vol_mongo_db:
+    name: ${VOLUME_MONGO_DB}
+
+networks:
+  net_search:
+    driver: bridge
