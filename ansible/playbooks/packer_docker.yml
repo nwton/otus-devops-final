@@ -1,0 +1,9 @@
+---
+# Bootstrap playbook to install docker-ce on fresh host
+- name: Check && install docker
+  hosts: all
+  become: True
+  gather_facts: True
+
+  roles:
+    - geerlingguy.docker
