@@ -41,6 +41,21 @@ $ base=https://releases.hashicorp.com/packer &&
 sudo install /tmp/packer /usr/local/bin/packer
 ```
 
+## Установка зависимостей
+
+Требуется роль для установки docker на хост.
+Используем роль [geerlingguy.docker](https://galaxy.ansible.com/geerlingguy/docker)
+из Ansible Galaxy.
+
+Для добавления
+
+``` text
+cd ansible
+ansible-galaxy install -r environments/stage/requirements.yml
+
+ansible-galaxy install geerlingguy.docker
+```
+
 ## Альтернативные варианты
 
 Сейчас собирается только один базовый образ Ubuntu 16.04 LTS + Docker CE.
