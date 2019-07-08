@@ -1,2 +1,2 @@
-project = "final-00000"
-gcs_bucket_name = "unknown-project-tf-state"
+project = "unknown-project-example"
+tf_state_bucket = "unknown-tf-state-bucket-example"

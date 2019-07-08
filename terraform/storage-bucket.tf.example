@@ -9,7 +9,7 @@ module "storage-bucket" {
   version = "0.1.1"
 
   # Имена поменяйте на другие
-  name = ["${var.gcs_bucket_name}"]
+  name = ["${var.tf_state_bucket}"]
 }
 
 output storage-bucket_url {

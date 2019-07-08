@@ -1,2 +1,4 @@
 # store tfstate in GCP
 storage-bucket.tf
+stage/backend.tf
+prod/backend.tf

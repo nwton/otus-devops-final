@@ -2,8 +2,8 @@ variable project {
   description = "Project ID"
 }
 
-variable gcs_bucket_name {
-  description = "Google Cloud storage bucket name for tfstate"
+variable tf_state_bucket {
+  description = "Google Cloud Storage bucket name for tfstate"
 }
 
 variable region {
