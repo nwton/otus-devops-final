@@ -1,0 +1,2 @@
+# store tfstate in GCP
+storage-bucket.tf
