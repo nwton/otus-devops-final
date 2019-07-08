@@ -16,4 +16,5 @@ provider "google" {
 module "vpc" {
   source        = "../modules/vpc"
   source_ranges = ["0.0.0.0/0"]
+  tf_env        = "${var.tf_env}"
 }

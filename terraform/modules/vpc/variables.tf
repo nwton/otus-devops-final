@@ -3,3 +3,8 @@ variable source_ranges {
 
   default = ["0.0.0.0/0"]
 }
+
+variable tf_env {
+  description = "Environment"
+  default     = "unknown"
+}

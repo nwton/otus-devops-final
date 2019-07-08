@@ -1,5 +1,5 @@
 resource "google_compute_firewall" "firewall_search_ui" {
-  name = "web-access-se-ui-8000"
+  name = "web-access-se-ui-8000-${var.tf_env}"
 
   description = "Allow access to web port 8000 for search engine UI"
   priority    = 1000
