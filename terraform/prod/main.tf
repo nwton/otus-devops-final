@@ -13,6 +13,14 @@ provider "google" {
   region = "${var.region}"
 }
 
+module "gitlab" {
+  source            = "../modules/gitlab"
+  public_key_path   = "${var.public_key_path}"
+  zone              = "${var.zone}"
+  gitlab_disk_image = "${var.disk_image}"
+  tf_env            = "${var.tf_env}"
+}
+
 module "vpc" {
   source        = "../modules/vpc"
   source_ranges = ["0.0.0.0/0"]
