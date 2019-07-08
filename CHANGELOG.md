@@ -12,6 +12,13 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 
 ### Changed
 
+## [0.2.1] - 2019-07-08
+### Added
+- Add terraform role for gitlab host
+- Add terraform role for firewall to crawler UI
+- Add support for remote storage for tfstate files
+- Add stage and prod environment in terraform
+
 ## [0.1.4] - 2019-07-08
 ### Added
 - Add packer template to build image in GCP with docker-ce
@@ -49,6 +56,7 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
   - <https://github.com/express42/search_engine_ui/archive/master.zip>
 
 [Unreleased]: https://github.com/nwton/otus-devops-final/compare/v0.1.4...HEAD
+[0.2.1]: https://github.com/nwton/otus-devops-final/compare/v0.1.4...v0.2.1
 [0.1.4]: https://github.com/nwton/otus-devops-final/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/nwton/otus-devops-final/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/nwton/otus-devops-final/compare/v0.0.1...v0.1.2
