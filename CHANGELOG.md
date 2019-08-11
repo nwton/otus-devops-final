@@ -9,6 +9,8 @@ And some info you can get from [older version 0.3.0](https://keepachangelog.com/
 
 ## [Unreleased]
 ### Added
+- Move support for remote storage to separate folder and add
+  notes about using in readme
 
 ### Changed
 
